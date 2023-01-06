@@ -4,7 +4,7 @@ The table below shows the coverage of the Barr C linting tool. This may change o
 
 | Symbol  | Description                                                                                 |
 | :-----: | ------------------------------------------------------------------------------------------- | 
-|   ☑️     | This check is implemented, and has no known issues.                                         |
+|   ✅    | This check is implemented, and has no known issues.                                         |
 |   ⚠️     | This check is implemented, but it may have bugs (see the check's notes).                    |
 |   ⁉️     | This check is not implemented, but it is currently being worked on.                         |
 |   ⛔    | This check is not implemented, and there are no current plans to work on it.                |
