@@ -28,3 +28,6 @@ Alternatively, you may want to download a newer version of `clang-format`. See t
 
 This is probably because clang-tidy only checks using the checks that you have enabled. To enable all Barr C checks, provide the option "barrc-*". A full list of checks is provided with what area of concern they represent in COVERAGE.md.
 
+# Why'd you make this?
+
+Because truthfully I can't stand Barr C (it implies that most people do code review on printed paper - not coming for anyone's preferences but what is this, 1975?), but I _really_ can't stand conforming to Barr C by hand.
