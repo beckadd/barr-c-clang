@@ -4,7 +4,7 @@ This repository contains a few files to specify rules that provide automated com
 
 To accomplish compliance, `clang-format` is used for stylistic conformity (e.g., line length, bracket spacing, etc.) while `clang-tidy` is used for both stylistic conformity and for more complicated semantic issues (e.g., `constant == var` equality checking versus `var == constant`, and initializing all variables). Where possible, `clang-tidy` will attempt to provide fixes to the warnings it provides. 
 
-Due to the way `clang-tidy` is designed, it was necessary to create a custom version of the package so that these checks would be integrated. This is included as a `tar.gz` file and is suitable for linux systems. 
+Due to the way `clang-tidy` is designed, it was necessary to create a custom version of the package so that these checks would be integrated. Compiled versions of this custom `clang-tidy` are given for OSX, Windows, and Linux in `Releases`. 
 
 The source files for these checks, along with their documentation and unit tests are located within the `src`, `docs`, and `test` subdirectories respectively.
 
