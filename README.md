@@ -23,3 +23,8 @@ To check your `clang-format` version, run `clang-format --version`. If this vers
 A minimum version number has been provided next to each configured option in the `.clang-format` file - comment out any option(s) that are too recent for your version of `clang-format`.
 
 Alternatively, you may want to download a newer version of `clang-format`. See the `clang` project documentation on instructions for your specific platform.
+
+### I have installed the custom clang-tidy, but when I run it on my code, it doesn't appear to notice my errors!
+
+This is probably because clang-tidy only checks using the checks that you have enabled. To enable all Barr C checks, provide the option "barrc-*". A full list of checks is provided with what area of concern they represent in COVERAGE.md.
+
