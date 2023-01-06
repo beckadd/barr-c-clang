@@ -1,0 +1,111 @@
+---
+# --- Barr C clang-format specification
+# --- Written for clang-format version >= 16.
+
+# Prerequisite Items for C Code and Clang-Format
+Language:        Cpp
+
+
+# Section 1.2 (Line Widths):
+# 1.2a
+ColumnLimit: 80 #(clang-format 3.7)
+
+# Section 1.3 (Braces):
+
+# 1.3a (Braces around Control Statements)
+InsertBraces: true #(clang-format 15)
+
+# 1.3b (Braces on their own line)
+BreakBeforeBraces: Allman #(clang-format 3.7)
+AllowShortFunctionsOnASingleLine: None
+
+# Section 3.1
+
+# 3.1b (Spacing of Assignment Operators)
+SpaceBeforeAssignmentOperators: true #(clang-format 3.7)
+
+# 3.1c (Spacing of Binary Operators)
+# Default and enforced by clang-format
+
+# 3.1d (Spacing of Unary Operators)
+# Default and enforced by clang-format
+
+# 3.1e (Pointer Alignment)
+# WIP: Works for Declaration but not for
+# references
+PointerAlignment: Middle #(clang-format 3.7)
+
+# 3.1f (Ternary Operator Alignment)
+# Default and enforced by clang-format
+
+# 3.1g (Structure Pointer/Member Spacing)
+# TODO: Need to fix this
+
+# 3.1h (Space around Square Brackets)
+SpaceBeforeSquareBrackets: false #(clang-format 10)
+SpacesInSquareBrackets: false #(clang-format 3.7)
+
+# 3.1i, 3.1j, 3.1k
+SpaceBeforeParens: Custom #(clang-format 3.5)
+SpaceBeforeParensOptions: #(clang-format 14)
+  AfterControlStatements: true # 3.1i
+  AfterFunctionDeclarationName: true # 3.1j
+  AfterFunctionDefinitionName: true # 3.1k
+
+# 3.1l (Spaces after Semicolons separating elements of for loop)
+# Default and enforced by clang-format.
+
+# 3.1m (No Space Before Statement-Terminating Semicolon)
+# Default and enforced by clang-format.
+
+# Section 3.2 (Alignment)
+
+# 3.1a (Names of Variables Aligned)
+AlignConsecutiveDeclarations: true #(clang-format 3.8)
+
+# 3.1b (Name of Struct and Union Members Aligned)
+# TODO: is this done by 3.1a?
+
+# 3.1c (Adjacent Assignments Aligned)
+AlignConsecutiveAssignments: true #(clang-format 3.8)
+
+# 3.1d (Preprocessor # at start of line)
+AlignConsecutiveMacros: true #(clang-format 9)
+IndentPPDirectives: AfterHash #(clang-format 6)
+
+# Section 3.3 (Blank Lines)
+
+# 3.3b (Blank Lines between blocks of Code)
+# This in itself is not enough. Loops, control statements, and switch are not handled here. Controls consecutive declarations.
+
+SeparateDefinitionBlocks: Always #(clang-format 14)
+
+# Section 3.4 (Indentation)
+
+# 3.4a (Indentation Char Count)
+IndentWidth: 4 #(clang-format 3.7)
+
+# 3.4b (Indentation in Switch Statement)
+IndentCaseLabels: true #(clang-format 3.3)
+
+
+# 3.4c (Indentation of Second Line in Long Statement)
+AlignAfterOpenBracket: true #(clang-format 3.8)
+# TODO: is this enough?
+
+# Section 3.5 (Tabs)
+
+# 3.5a (Never Use Tabs)
+UseTab: Never #(clang-format 3.7)
+
+# Section 3.6 (Non-Printing Characters)
+
+# 3.6a (Source Lines End in LF Rather Than CRLF)
+UseCRLF: false #(clang-format 10)
+
+# 3.6b (Form Feed Character Allowed)
+# TODO: Not handled here?
+
+# Other rules (not specified by Barr C, but preferred by Cyber School)
+RemoveSemicolon: true #(clang-format 16)
+...
